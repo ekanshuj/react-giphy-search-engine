@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="input.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- <script src="https://kit.fontawesome.com/8827ed4e17.js" crossorigin="anonymous" defer></script> -->
+  <script src="script.js" defer></script>
+  <title>Giphy-Engine</title>
+</head>
+
+<body class="bg-black min-h-screen min-w-full">
+  <main class="container mx-auto bg-inherit h-full w-full">
+    <header class="flex justify-between items-center h-[7vh] bg-inherit w-full top-0 left-0 z-[999]">
+      <div class="logo text-5xl text-[ghostwhite] font-bold cursor-pointer">GIFs</div>
+      <button aria-expanded="false" id="toggle"
+        class="absolute right-0 mx-2 z-[999] aspect-square w-7 bg-[url(/img/hamburger-32.png)] sm:hidden md:hidden lg:hidden xl:hidden"></button>
+      <nav>
+        <ul data-visible="false"
+          class="primary__navigation fixed sm:static md:static lg:static xl:static flex flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row items-center justify-center gap-2 bg-blue-600 sm:bg-inherit md:bg-inherit lg:bg-inherit xl:bg-inherit inset-y-0 sm:inset-y-auto md:inset-y-auto lg:inset-y-auto xl:inset-y-auto left-[40%] sm:left-auto md:left-auto lg:left-auto xl:left-auto right-0 sm:right-auto md:right-auto lg:right-auto xl:right-auto translate-x-full sm:translate-x-0 md:translate-x-0 lg:translate-x-0 xl:translate-x-0 transition-transform sm:transition-none md:transition-none lg:transition-none xl:transition-none xl:mx-1">
+          <li><a
+              class="text-[25px] text-[ghostwhite] uppercase font-bold hover:bg-blue-700 p-[0.35rem] xl:border-b-[5px] border-blue-600"
+              href="#">Elements</a></li>
+          <li><a
+              class="text-[25px] text-[ghostwhite] uppercase font-bold hover:bg-blue-700 p-[0.35rem] xl:border-b-[5px] border-blue-600"
+              href="#">Elements</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="search__bar relative">
+      <input id="search__tab" class="bg-white h-[6vh] w-full outline-none placeholder:text-[1.245rem] text-[4rem]"
+        type="search" placeholder="Search all the GIFs and stickers">
+      <button class="absolute top-0 right-0 bg-fuchsia-600 aspect-square h-[6vh]" type="submit">
+        <!-- <svg class="icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          ! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.
+          <path
+            d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
+        </svg> -->
+        <!-- <i id="fa-icon" class="fa fa-search fa-2x" aria-hidden="true"></i> -->
+      </button>
+    </div>
+    <!-- <span class="text-3xl text-[ghostwhite] inline-block my-4 font-medium uppercase">Trending GIFs</span>
+    <section id="giphy-data" class="my-2"></section> -->
+
+    <span class="text-3xl text-[ghostwhite] inline-block my-4 font-medium uppercase">Trending Stickers</span>
+    <section id="sticker-data" class="my-2"></section>
+  </main>
+</body>
+
+</html>

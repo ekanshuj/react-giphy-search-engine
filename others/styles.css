@@ -1,0 +1,15 @@
+.primary__navigation[data-visible="true"] {
+  transform: translateX(0%);
+}
+#toggle[aria-expanded="true"] {
+  background: url(./img/close-30.png) no-repeat center center / cover;
+}
+.grid__division {
+  display: inline-grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+#fa-icon {
+  color: ghostwhite;
+}
