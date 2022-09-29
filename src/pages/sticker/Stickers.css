@@ -1,0 +1,7 @@
+.stickers {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.255rem;
+  margin-top: 0.45rem;
+}
